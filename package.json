@@ -12,6 +12,9 @@
     "predev": "npm run build",
     "dev": "concurrently \"npx tsc --watch\" \"nodemon dist/index.js\""
   },
+  "engines": {
+    "node": ">=17 <19"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

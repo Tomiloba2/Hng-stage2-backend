@@ -5,7 +5,7 @@ This Api interfaces with the Postgressql database resource
 ## Project Setup
 In order to setup and host this project locally, follow the following steps  
 1. clone this repository using the **git clone** command
-2. Navigate to the root directory of Your project an in the terminal run **npm install** to install the required packages
+2. Navigate to the root directory of Your project and in the terminal run **npm install** to install the required packages
 3. Next, run **npm run dev** to start up the local server on *localhost:2000*
 
 ## How to query data to and from the API

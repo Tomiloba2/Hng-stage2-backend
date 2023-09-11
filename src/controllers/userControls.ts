@@ -79,8 +79,8 @@ export const update_AUser = async (req: Request, res: Response, next: NextFuncti
         /* reqex pattern to validate the request body format */
         const stringFormat = /^[^0-9]*$/
         /* ---id params--- */
-        //const {username}=req.query
         const { id } = req.params
+        /* ---providing an extra layer of validation--- */
         if (!name.trim() ) {
             res.status(422)
             throw new Error("name is required");
