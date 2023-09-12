@@ -36,7 +36,7 @@ url format [**http:localhost:2000/api/user_id**](http:localhost:2000/api/user_id
     url format **http:localhost:2000/api/user_id**  or **http:localhost:2000/api/username** 
 
 ## Link to UML diagrams
-[get a visual represntation of the entire REST API Project](https://helloworld)
+![uml diagram](./ClassDiagram1.jpg)
 
 ## Sample uasage of the api
 * Create:
