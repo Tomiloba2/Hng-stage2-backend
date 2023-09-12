@@ -8,7 +8,7 @@ This Api interfaces with the Postgresql database resource
 * Prisma orm
 * dotenv
 
-you can also text the live api here [apiUrl]()
+you can also text the live api here [apiUrl](https://hng-stage2-backend.onrender.com/api/)
 
 ## Project Setup
 In order to setup and host this project locally, follow the following steps  
@@ -36,7 +36,7 @@ url format [**http:localhost:2000/api/user_id**](http:localhost:2000/api/user_id
     url format **http:localhost:2000/api/user_id**  or **http:localhost:2000/api/username** 
 
 ## Link to UML diagrams
-![uml diagram](./ClassDiagram1.jpg)
+![uml diagram](https://drive.google.com/file/d/1Skk7A-7Qvv_pq0UgYGEOvmo99_e4G0wn/view)
 
 ## Sample uasage of the api
 * Create:
