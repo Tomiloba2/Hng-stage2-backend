@@ -36,7 +36,7 @@ url format [**http:localhost:2000/api/user_id**](http:localhost:2000/api/user_id
     url format **http:localhost:2000/api/user_id**  or **http:localhost:2000/api/username** 
 
 ## Link to UML diagrams
-![uml diagram](https://drive.google.com/file/d/1Skk7A-7Qvv_pq0UgYGEOvmo99_e4G0wn/view)
+[view the UML diagram](https://drive.google.com/file/d/1Skk7A-7Qvv_pq0UgYGEOvmo99_e4G0wn/view)
 
 ## Sample uasage of the api
 * Create:
