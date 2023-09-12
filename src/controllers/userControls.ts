@@ -113,14 +113,18 @@ export const update_AUser = async (req: Request, res: Response, next: NextFuncti
 
         }
         /* if the new user name is unique, the old name should be updated to the new one */
-        const updatedUser = await prisma.user.update({
+        const updatedUser = await prisma.user.updateMany({
             where: {
-                id
+                OR:[
+                    {id:id},
+                    {name:id}
+                ]
             },
             data: {
                 name: name
             }
         })
+                
         return res.status(201).json(`updated successfully`)
     } catch (error) {
         console.log(error);
@@ -151,12 +155,14 @@ export const delete_AUser = async (req: Request, res: Response, next: NextFuncti
             res.status(404)
             throw new Error("user does not exist");
         }
-        const deletedUser = await prisma.user.delete({
+        const deletedUser = await prisma.user.deleteMany({
             where: {
-                id: id
+                OR:[
+                    {id:id},{name:id}
+                ]
             }
         })
-        return res.status(204).json(`deleted successfully`)
+        return res.status(200).json(`deleted successfully`)
     } catch (error) {
         console.log(error);
         next(error)

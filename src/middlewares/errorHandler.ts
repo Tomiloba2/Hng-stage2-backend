@@ -6,7 +6,7 @@ const errorStatus = {
     notFound: 404,
     unAuthorised: 401,
     forbidden: 403,
-    invalid: 422,
+    invalidRequest: 422,
     server_Error: 500
 }
 
@@ -42,7 +42,7 @@ const errorHandler = async (err: Error, req: Request, res: Response, next: NextF
                 stack: err.stack
             })
             break;
-        case errorStatus.invalid:
+        case errorStatus.invalidRequest:
             return res.json({
                 title: Object.keys(errorStatus)[4],
                 message: err.message,
